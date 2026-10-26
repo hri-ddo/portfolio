@@ -155,11 +155,19 @@ p {
     font-weight: 700;
 }
 
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    justify-content: flex-end;
+}
+
 .project-link {
     color: var(--accent-color);
     text-decoration: none;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
+    white-space: nowrap;
 }
 
 .project-link:hover {
@@ -203,6 +211,40 @@ p {
     color: var(--text-primary);
 }
 
+.skills-grid .wide {
+    grid-column: 1 / -1;
+    border-left-color: var(--accent-warm);
+}
+
+.role-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.role-list strong {
+    color: var(--text-primary);
+    display: block;
+}
+
+.role-list span {
+    color: var(--accent-strong);
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 650;
+    margin: 2px 0 6px;
+}
+
+.role-list p,
+.earlier {
+    font-size: 0.95rem;
+}
+
+.earlier {
+    margin-top: 16px;
+}
+
 .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -221,6 +263,25 @@ footer {
     text-align: center;
     font-size: 0.85rem;
     color: var(--text-secondary);
+}
+
+.js .fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 420ms ease, transform 420ms ease;
+}
+
+.js .fade-in.visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .js .fade-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -244,5 +305,9 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         gap: 5px;
+    }
+
+    .project-links {
+        justify-content: flex-start;
     }
 }

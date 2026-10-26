@@ -4,84 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zawad Ishmam Hriddo | AI & Computer Science</title>
+    <meta name="description" content="Zawad Ishmam Hriddo is a third-year computer science student at BRAC University and an AI/ML support instructor. Portfolio of machine learning, computer vision, and applied AI projects.">
+    <link rel="canonical" href="https://zawadishmamhriddo.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zawadishmamhriddo.vercel.app/">
+    <meta property="og:title" content="Zawad Ishmam Hriddo | AI & Computer Science">
+    <meta property="og:description" content="Third-year CSE student at BRAC University and AI/ML support instructor. Machine learning, computer vision, and applied AI projects.">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Zawad Ishmam Hriddo | AI & Computer Science">
+    <meta name="twitter:description" content="Third-year CSE student at BRAC University and AI/ML support instructor. Machine learning, computer vision, and applied AI projects.">
+    <meta name="theme-color" content="#14213d">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="fade-in">
             <h1>Zawad Ishmam Hriddo</h1>
-            <p class="subtitle">Computer Science Student @ BRAC University | AI Enthusiast</p>
+            <p class="subtitle">Third-year Computer Science @ BRAC University | AI/ML Support Instructor</p>
             <div class="links">
                 <a href="mailto:zawad.ishmam.hriddo@g.bracu.ac.bd">Email</a>
-                <a href="https://linkedin.com/in/zawad-ishmam-hriddo" target="_blank">LinkedIn</a>
-                <a href="https://github.com/hri-ddo" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/zawad-ishmam-hriddo/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/hri-ddo" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
         </header>
 
         <hr>
 
-        <section class="about">
+        <section class="about fade-in">
             <h2>About Me</h2>
-            <p>CSE student focused on machine learning, computer vision, and AI systems engineering. Interested in production ML pipelines, intelligent automation, and scalable AI applications.</p>
+            <p>Third-year computer science student at BRAC University, focused on machine learning, computer vision, and applied AI. I teach AI/ML as a support instructor at Programming Hero, and I am learning LangChain, LangGraph, and MLOps so models can move from notebooks into reliable applications.</p>
         </section>
 
         <hr>
 
-        <section class="projects">
+        <section class="projects fade-in">
             <h2>Selected Work</h2>
             <div class="project-grid">
-                <div class="project-card">
+                <article class="project-card">
                     <div class="project-header">
                         <h3>Real vs Fake Face Detection</h3>
-                        <a href="https://github.com/hri-ddo/real-vs-fake-face-detection" target="_blank" class="project-link">View Repository ↗</a>
+                        <div class="project-links">
+                            <a href="https://github.com/hri-ddo/real-vs-fake-face-detection" target="_blank" rel="noopener noreferrer" class="project-link">Repository ↗</a>
+                            <a href="https://huggingface.co/spaces/Hriddo/LookSee_AI" target="_blank" rel="noopener noreferrer" class="project-link">Live demo ↗</a>
+                        </div>
                     </div>
-                    <p>A deep learning project built with PyTorch that uses a custom Convolutional Neural Network (CNN) to classify human faces as either Real or AI-Generated (Fake).</p>
+                    <p>PyTorch CNN that classifies faces as real or AI-generated. Trained on the 140k Real and Fake Faces dataset and deployed with Gradio. Test accuracy 96.42%.</p>
                     <div class="tags">
                         <span>Python</span>
                         <span>PyTorch</span>
                         <span>Computer Vision</span>
-                        <span>CNN</span>
+                        <span>Gradio</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
+                <article class="project-card">
                     <div class="project-header">
-                        <h3>Stock Price Prediction</h3>
-                        <a href="https://github.com/hri-ddo/StockPrice" target="_blank" class="project-link">View Repository ↗</a>
+                        <h3>RAG PDF Question Answering</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/hri-ddo/RAG-Based-Pdf-to-query-using-FastAPI-and-LangChain" target="_blank" rel="noopener noreferrer" class="project-link">Repository ↗</a>
+                        </div>
                     </div>
-                    <p>Engineered a simulation workflow to evaluate market data, forecast trends, and analyze historical stock metrics using machine learning pipelines.</p>
+                    <p>Upload a PDF and ask questions grounded in the document. FastAPI and Streamlit, with a LangChain retrieval chain, local embeddings, FAISS, and Groq for answers.</p>
+                    <div class="tags">
+                        <span>LangChain</span>
+                        <span>FastAPI</span>
+                        <span>FAISS</span>
+                        <span>Streamlit</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>World Cup 2026 Predictor</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/hri-ddo/Predictor" target="_blank" rel="noopener noreferrer" class="project-link">Repository ↗</a>
+                            <a href="https://huggingface.co/spaces/Hriddo/world-cup-2026-predictor" target="_blank" rel="noopener noreferrer" class="project-link">Live demo ↗</a>
+                        </div>
+                    </div>
+                    <p>Gradio app that estimates FIFA World Cup 2026 match outcomes from historical results, Elo-style strength, recent form, and head-to-head features with an XGBoost classifier.</p>
                     <div class="tags">
                         <span>Python</span>
-                        <span>Machine Learning</span>
-                        <span>Scikit-Learn</span>
+                        <span>XGBoost</span>
+                        <span>Gradio</span>
                         <span>Pandas</span>
                     </div>
-                </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Crusades Atlas</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/hri-ddo/crusades-atlas" target="_blank" rel="noopener noreferrer" class="project-link">Repository ↗</a>
+                            <a href="https://crusades-atlas.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">Live demo ↗</a>
+                        </div>
+                    </div>
+                    <p>Mobile-first classroom map of the Crusades. React and Leaflet on the front, FastAPI for locations, routes, territories, and quiz grading.</p>
+                    <div class="tags">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>FastAPI</span>
+                        <span>Leaflet</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Stock Price Prediction</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/hri-ddo/StockPrice" target="_blank" rel="noopener noreferrer" class="project-link">Repository ↗</a>
+                        </div>
+                    </div>
+                    <p>Scikit-learn pipeline that predicts a stock price from historical and competitor features. Random forest with grid search, about 0.96 R², and a Gradio interface.</p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>Pandas</span>
+                        <span>Gradio</span>
+                    </div>
+                </article>
             </div>
         </section>
 
         <hr>
 
-        <section class="infrastructure">
+        <section class="infrastructure fade-in">
             <h2>Technical Skills</h2>
             <div class="skills-grid">
                 <div>
-                    <strong>Languages:</strong> Python, C++, Bash, SQL
+                    <strong>Languages:</strong> Python, C++, SQL, Bash
                 </div>
                 <div>
-                    <strong>AI & ML:</strong> PyTorch, Scikit-Learn, XGBoost, YOLO
+                    <strong>AI & ML:</strong> PyTorch, TensorFlow, Scikit-learn, XGBoost, YOLOv8
                 </div>
                 <div>
-                    <strong>NLP & LLMs:</strong> Hugging Face, LLAMA
+                    <strong>NLP & LLMs:</strong> Hugging Face, Transformers, LLaMA
                 </div>
                 <div>
                     <strong>Data Science:</strong> Pandas, NumPy, Matplotlib
                 </div>
                 <div>
-                    <strong>Software Engineering:</strong> MySQL, Postgres, FastAPI
+                    <strong>Software Engineering:</strong> FastAPI, MySQL, Postgres, Docker, Git
                 </div>
                 <div>
-                    <strong>Tools & MLOps:</strong> Git, GitHub, Docker, Conda, ROS2
+                    <strong>Robotics:</strong> ROS2 (Humble)
+                </div>
+                <div class="wide">
+                    <strong>Currently learning:</strong> LangChain, LangGraph, MLOps
                 </div>
             </div>
         </section>
@@ -89,16 +160,27 @@
         <hr>
 
         <div class="two-column">
-            <section class="education">
+            <section class="education fade-in">
                 <h2>Education</h2>
                 <p><strong>BRAC University</strong><br>
-                BSc in Computer Science & Engineering (2024 - 2027 Expected)<br>
-                CGPA: 3.49/4.00</p>
+                BSc in Computer Science & Engineering<br>
+                Third year · 2024 – 2027 (expected)<br>
+                CGPA: 3.67/4.00</p>
             </section>
-            <section class="engagements">
+            <section class="engagements fade-in">
                 <h2>Current Engagements</h2>
-                <p><strong>BRACU Duburi (2025)</strong><br>
-                Engaged in national outreach and underwater robotics through the BRACU Duburi initiative, enhancing access and education in robotics across Bangladesh.</p>
+                <ul class="role-list">
+                    <li>
+                        <strong>Programming Hero</strong>
+                        <span>AI/ML Support Instructor · Jul 2026 – Present</span>
+                        <p>Live sessions on deep learning, computer vision, and NLP, plus assignment review and student support for the Phitron AI/ML community.</p>
+                    </li>
+                    <li>
+                        <strong>BRAC University Computer Club</strong>
+                        <span>Senior Executive, Research & Development · Mar 2024 – Present</span>
+                    </li>
+                </ul>
+                <p class="earlier">Earlier: Phitron Campus Ambassador, and contributor with BRACU Duburi and BRACU Mongol Tori (2025–2026).</p>
             </section>
         </div>
 
@@ -106,5 +188,6 @@
             <p>© 2026 Zawad Ishmam Hriddo. Dhaka, Bangladesh.</p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
