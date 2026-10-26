@@ -150,9 +150,29 @@ p {
     margin-bottom: 10px;
 }
 
+.project-title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 .project-header h3 {
     font-size: 1.15rem;
     font-weight: 700;
+}
+
+.badge {
+    background: #fff4ea;
+    border: 1px solid #f3d2b0;
+    border-radius: 4px;
+    color: #9a5416;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    padding: 4px 7px;
+    text-transform: uppercase;
 }
 
 .project-links {
